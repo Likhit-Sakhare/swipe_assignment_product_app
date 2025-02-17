@@ -49,8 +49,38 @@ This was an assignment by Swipe (YC S21). The app lets you view a product list a
 ## Lessons Learned
 
 While building this app, I learned about:
+1. **Safe API Calls & Result Wrapper**
+   - Implemented a "safeApiCall()" wrapper function which handels the API calls efficiently.
+   - In the safeApiCall() use a "Result<T>()" wrapper sealed class(also for other cases) which represent different states: Success(), Error() and Loading().
+     
+2. **Retrofit POST Request & Multipart Handling**
+   - Learned how to post/send the data using the "@POST" method in Retrofit and also get to know about "@part" annotation of Retrofit.
+   - Understood what is "RequestBody", how you can convert the file or string or anything into the RequestBody
+   - Learned what are "Multipart" and "MultipartBody" and how you can send files using "createFormData()" which formats the data properly to send as "multipart/form-data" request.
 
+3. **Conversion from URI to File**
+   - Understood about "ContentResolver", "MediaStore", "cursor", "inputStream", "outputStream", etc, also what are "mimeTypes" and also how you can convert an URI to File.
 
+4. **Network Connectivity Check**
+   - Get to know about "ConnectivityManager" and "Network Capabilities", and by using those how to chekc the network/internet availability before making the network requests.
+
+5. **Notifications**
+   - Implemented notifications natively in Android i.e. without using any third-party libraries.
+   - Also requested notification permissions dynamically i.e. when the user first install and open the app they will ask about permission to show them the notifications.
+
+6. **Dependency Injection with Koin**
+   - Explored Koin and learn how to implement that as a DI framework and I found it quite simpler than Dagger Hilt because of it's fewer annotations and a more straightforward approach.
+
+7. **WorkManager**
+   - Get to know how you can schedule background sync oprations using WorkManager. Here I use WorkManager for syncing i.e. to add the locally added product to the API when there is network.
+   - Learned what are "Constraints" and "WorkRequest" like "OneTimeWorkRequestBuilder<>()".
+   - Understood that WorkManager internally creates "Worker" instances, so constructor injection is not possible. Instead, dependencies must be provided manually and we have to use "KoinComponent" for that.
+
+8. **Some Concepts of Jetpack Compose**
+   - Used "derivedStateOf()" to derive state efficiently from other state values.
+   - Get to know how you can properly handle the "lazyListState()".
+   - Implemented "SubComposeAsyncImage()" for optimized image loading and showing a proper image and it's placeholder.
+   - Learned how to enable and implement the zoom-in and zoom-out functionality for images.
 
 --- 
 
