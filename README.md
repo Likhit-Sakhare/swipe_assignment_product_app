@@ -33,7 +33,7 @@ This was an assignment by Swipe (YC S21). The app lets you view a product list a
 1. **Kotlin**: First-class and official programming language for Android development.
 2. **Jetpack compose**: A toolkit for building Android apps that uses a declarative API to simplify and speed up UI development
 3. **Material Components for Android**: For modular and customizable Material Design UI components.
-4. **Clean Architecture**: It is a design approach that separates an application into layers (e.g., presentation, domain, data) to ensure scalability, maintainability, and independence from frameworks or external libraries.
+4. **MVVM**: It is an architectural pattern that separates UI (View) from business logic (ViewModel) and data (Model) to improve maintainability, testability, and scalability.
 5. **Kotlin Coroutines**: They are a concurrency framework that simplifies asynchronous programming by allowing tasks to be written sequentially while managing threading and suspensions efficiently.
 6. **Room**: A persistence library that provides an abstraction layer over SQLite to manage local database operations efficiently in Android applications.
 7. **Koin**: It is a lightweight dependency injection framework for Kotlin, enabling easy and modular DI setup.
