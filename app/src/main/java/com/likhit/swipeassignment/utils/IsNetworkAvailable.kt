@@ -1,4 +1,4 @@
-package com.likhit.swipeassignment.presentation.utils
+package com.likhit.swipeassignment.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

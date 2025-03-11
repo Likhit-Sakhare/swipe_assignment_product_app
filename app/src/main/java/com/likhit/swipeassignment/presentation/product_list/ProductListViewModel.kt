@@ -7,9 +7,9 @@ import androidx.lifecycle.viewModelScope
 import com.likhit.swipeassignment.data.remote.model.Product
 import com.likhit.swipeassignment.data.remote.repository.ProductRepository
 import com.likhit.swipeassignment.presentation.utils.UIState
-import com.likhit.swipeassignment.presentation.utils.isNetworkAvailable
 import com.likhit.swipeassignment.presentation.utils.showToast
 import com.likhit.swipeassignment.utils.Result
+import com.likhit.swipeassignment.utils.isNetworkAvailable
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

@@ -7,7 +7,7 @@ import androidx.work.WorkerParameters
 import com.likhit.swipeassignment.data.local.model.LocalProduct
 import com.likhit.swipeassignment.data.local.repository.LocalProductRepository
 import com.likhit.swipeassignment.data.remote.repository.ProductRepository
-import com.likhit.swipeassignment.presentation.utils.isNetworkAvailable
+import com.likhit.swipeassignment.utils.isNetworkAvailable
 import com.likhit.swipeassignment.presentation.utils.showNotification
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
