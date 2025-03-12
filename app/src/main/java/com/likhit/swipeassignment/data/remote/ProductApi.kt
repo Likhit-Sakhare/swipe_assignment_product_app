@@ -1,7 +1,6 @@
 package com.likhit.swipeassignment.data.remote
 
 import com.likhit.swipeassignment.data.remote.model.Product
-import com.likhit.swipeassignment.data.remote.model.Products
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Response

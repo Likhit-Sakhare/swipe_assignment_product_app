@@ -11,8 +11,4 @@ fun isNetworkAvailable(context: Context): Boolean {
     val networkCapabilities = connectivityManager .getNetworkCapabilities(network)?: return false
     return networkCapabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
             && networkCapabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED)
-
-    // Deprecated
-    // val activeNetworkInfo = connectivityManager?.activeNetworkInfo
-    // return activeNetworkInfo != null && activeNetworkInfo.isConnected
 }
